@@ -42,5 +42,14 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Calviri is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
+Calviri is a Phoenix, Arizona biotechnology company, founded in 2017, that develops multi-cancer
+diagnostic tests and therapeutic and preventative cancer vaccines for dogs and people, built on
+RNA-Error Derived Neoantigens (REDNs). Its lead product, StageOne Plus, is a canine multi-cancer
+blood test designed to detect stage 1 disease.
+
+Calviri publishes no developer program, no product API and no developer portal. The only
+machine-readable surface on `calviri.com` is the Wix-platform-generated `llms.txt` and the anonymous
+site MCP endpoint it advertises at `https://www.calviri.com/_api/mcp` — both captured verbatim here.
+
+- https://www.calviri.com/
 - https://forgeglobal.com/calviri_stock/

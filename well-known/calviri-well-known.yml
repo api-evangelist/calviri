@@ -1,0 +1,37 @@
+generated: '2026-08-09'
+method: probed
+source: https://www.calviri.com/
+description: >-
+  Probe record for the /.well-known/ discovery surface on calviri.com. NOTHING
+  was found: the Wix edge that fronts www.calviri.com answers HTTP 400 for every
+  /.well-known/* path rather than 404, so there is no security.txt, no OIDC or
+  OAuth metadata, no api-catalog, no ai-plugin.json and no A2A agent card. The
+  apex calviri.com 301s to www before the same result. Recorded so a later run
+  does not re-litigate it; no WellKnown pointer is wired in apis.yml because no
+  document exists to point at.
+host: https://www.calviri.com
+documents: []
+probes:
+  - path: /.well-known/security.txt
+    status: 400
+  - path: /.well-known/openid-configuration
+    status: 400
+  - path: /.well-known/oauth-authorization-server
+    status: 400
+  - path: /.well-known/oauth-protected-resource
+    status: 400
+  - path: /.well-known/api-catalog
+    status: 400
+  - path: /.well-known/ai-plugin.json
+    status: 400
+  - path: /.well-known/agent-card.json
+    status: 400
+  - path: /.well-known/agent.json
+    status: 400
+  - path: /_api/mcp/.well-known/oauth-protected-resource
+    status: 404
+notes: >-
+  A 400 on every /.well-known/* path is a Wix platform behaviour, not a
+  deliberate Calviri choice. The one machine-readable surface this host does
+  serve is /llms.txt (200) and the MCP endpoint it advertises — see llms/ and
+  mcp/.
