@@ -2,28 +2,23 @@ generated: '2026-08-09'
 method: searched
 status: published
 source: https://www.calviri.com/llms.txt
-description: >-
-  Calviri serves a live, anonymous Model Context Protocol endpoint from its own
-  host at https://www.calviri.com/_api/mcp. The endpoint is PLATFORM-PROVIDED by
-  Wix (calviri.com is a Wix site) rather than built by Calviri engineering — it
-  is the standard Wix "Site Visitor Assistant" MCP server, advertised in the
-  Wix-generated /llms.txt. It is nonetheless a real machine-readable surface on
-  the company's own domain: an anonymous `initialize` and `tools/list` both
-  returned 200 on 2026-08-09 and the nine tools below were captured verbatim
-  (see calviri-mcp-tools-list.json). Calviri publishes no product API of its own
-  — no OpenAPI, no GraphQL, no developer portal (see x-coverage in apis.yml).
+description: 'Calviri serves a live, anonymous Model Context Protocol endpoint from its own host at https://www.calviri.com/_api/mcp.
+  The endpoint is PLATFORM-PROVIDED by Wix (calviri.com is a Wix site) rather than built by Calviri engineering
+  — it is the standard Wix "Site Visitor Assistant" MCP server, advertised in the Wix-generated /llms.txt.
+  It is nonetheless a real machine-readable surface on the company''s own domain: an anonymous `initialize`
+  and `tools/list` both returned 200 on 2026-08-09 and the nine tools below were captured verbatim (see
+  calviri-mcp-tools-list.json). Calviri publishes no product API of its own — no OpenAPI, no GraphQL,
+  no developer portal (see x-coverage in apis.yml).'
 server:
   name: calviri-site-visitor-assistant
   transport: http
   url: https://www.calviri.com/_api/mcp
   auth: none
-  auth_note: >-
-    No authentication is required to connect or to list tools. Actions taken on
-    a visitor's behalf require a visitor access token minted anonymously by the
-    GenerateVisitorToken tool; there is no OAuth flow and
-    /.well-known/oauth-protected-resource returns 404 under the MCP path.
+  auth_note: No authentication is required to connect or to list tools. Actions taken on a visitor's behalf
+    require a visitor access token minted anonymously by the GenerateVisitorToken tool; there is no OAuth
+    flow and /.well-known/oauth-protected-resource returns 404 under the MCP path.
   protocol_version: '2025-06-18'
-  server_info_name: 'Site Visitor Assistant for site "Calviri" (https://www.calviri.com/_api/mcp)'
+  server_info_name: Site Visitor Assistant for site "Calviri" (https://www.calviri.com/_api/mcp)
   server_info_version: 1.0.0
   capabilities:
     tools:
@@ -33,96 +28,96 @@ server:
   first_party: false
   platform_docs: https://dev.wix.com/docs/develop-websites/articles/get-started/about-the-wix-site-mcp
 site_capabilities:
-  # Reported verbatim by the GetBusinessDetails tool on 2026-08-09
-  - Ecommerce App: manage cart, open checkout for a cart
-  - 'Events App: list and query events, RSVP to an event'
+- Ecommerce App: manage cart, open checkout for a cart
+- 'Events App: list and query events, RSVP to an event'
 tools:
-  - name: GetBusinessDetails
-    description: >-
-      Get business and site details for "Calviri": timezone, email, phone, fax,
-      address, site name, business name, description, business capabilities.
-    parameters: []
-  - name: SearchInSite
-    description: Searches the Calviri site for information.
-    parameters:
-      - name: searchTerm
-        required: true
-  - name: SearchSiteApiDocs
-    description: >-
-      Searches the API documentation for the Wix business solutions installed on
-      this site and explains how to call them.
-    parameters:
-      - name: searchTerm
-        required: true
-  - name: GenerateVisitorToken
-    description: >-
-      Create a new visitor session and obtain a visitor access token for the
-      site. Must be called before the first CallWixSiteAPI request.
-    parameters: []
-  - name: CallWixSiteAPI
-    description: >-
-      Call APIs on the Calviri site to perform an action on a visitor's behalf,
-      such as querying site data or starting a purchase.
-    parameters:
-      - name: visitorToken
-        required: true
-      - name: url
-        required: true
-      - name: method
-        required: true
-      - name: body
-        required: false
-  - name: ExecuteWixAPI
-    description: >-
-      Run JavaScript against the Wix REST API on the Calviri site, on the
-      visitor's behalf, in a sandbox.
-    parameters:
-      - name: code
-        required: true
-      - name: reason
-        required: true
-      - name: hasMutations
-        required: true
-      - name: sourceDocUrls
-        required: true
-      - name: visitorToken
-        required: true
-  - name: BrowseWixRESTDocsMenu
-    description: Browse the Wix REST API documentation menu hierarchy.
-    parameters:
-      - name: menuUrl
-        required: false
-      - name: reason
-        required: true
-  - name: ReadFullDocsArticle
-    description: Fetches a complete article from the Wix developer documentation portal.
-    parameters:
-      - name: articleUrl
-        required: true
-  - name: ReadFullDocsMethodSchema
-    description: >-
-      Fetches the full request/response schema for a Wix API method before it is
-      called.
-    parameters:
-      - name: articleUrl
-        required: true
-      - name: reason
-        required: true
+- name: GetBusinessDetails
+  description: 'Get business and site details for "Calviri": timezone, email, phone, fax, address, site
+    name, business name, description, business capabilities.'
+  parameters: []
+- name: SearchInSite
+  description: Searches the Calviri site for information.
+  parameters:
+  - name: searchTerm
+    required: true
+- name: SearchSiteApiDocs
+  description: Searches the API documentation for the Wix business solutions installed on this site and
+    explains how to call them.
+  parameters:
+  - name: searchTerm
+    required: true
+- name: GenerateVisitorToken
+  description: Create a new visitor session and obtain a visitor access token for the site. Must be called
+    before the first CallWixSiteAPI request.
+  parameters: []
+- name: CallWixSiteAPI
+  description: Call APIs on the Calviri site to perform an action on a visitor's behalf, such as querying
+    site data or starting a purchase.
+  parameters:
+  - name: visitorToken
+    required: true
+  - name: url
+    required: true
+  - name: method
+    required: true
+  - name: body
+    required: false
+- name: ExecuteWixAPI
+  description: Run JavaScript against the Wix REST API on the Calviri site, on the visitor's behalf, in
+    a sandbox.
+  parameters:
+  - name: code
+    required: true
+  - name: reason
+    required: true
+  - name: hasMutations
+    required: true
+  - name: sourceDocUrls
+    required: true
+  - name: visitorToken
+    required: true
+- name: BrowseWixRESTDocsMenu
+  description: Browse the Wix REST API documentation menu hierarchy.
+  parameters:
+  - name: menuUrl
+    required: false
+  - name: reason
+    required: true
+- name: ReadFullDocsArticle
+  description: Fetches a complete article from the Wix developer documentation portal.
+  parameters:
+  - name: articleUrl
+    required: true
+- name: ReadFullDocsMethodSchema
+  description: Fetches the full request/response schema for a Wix API method before it is called.
+  parameters:
+  - name: articleUrl
+    required: true
+  - name: reason
+    required: true
 raw: calviri-mcp-tools-list.json
 x-evidence:
-  - fetched: '2026-08-09'
-    url: https://www.calviri.com/llms.txt
-    method: GET
-    http_status: 200
-    content_type: text/plain; charset=utf-8
-  - fetched: '2026-08-09'
-    url: https://www.calviri.com/_api/mcp
-    method: 'POST initialize'
-    http_status: 200
-    content_type: application/json; charset=utf-8
-  - fetched: '2026-08-09'
-    url: https://www.calviri.com/_api/mcp
-    method: 'POST tools/list'
-    http_status: 200
-    content_type: application/json; charset=utf-8
-    tool_count: 9
+- fetched: '2026-08-09'
+  url: https://www.calviri.com/llms.txt
+  method: GET
+  http_status: 200
+  content_type: text/plain; charset=utf-8
+- fetched: '2026-08-09'
+  url: https://www.calviri.com/_api/mcp
+  method: POST initialize
+  http_status: 200
+  content_type: application/json; charset=utf-8
+- fetched: '2026-08-09'
+  url: https://www.calviri.com/_api/mcp
+  method: POST tools/list
+  http_status: 200
+  content_type: application/json; charset=utf-8
+  tool_count: 9
+deployment:
+  mode: remote
+  endpoint: https://www.calviri.com/_api/mcp
+  verified: probed
+  probe: live
+  tools: 9
+  checked: '2026-08-12'
+  source: catalog MCP census
