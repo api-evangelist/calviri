@@ -53,6 +53,10 @@ apis:
   baseURL: https://www.calviri.com/_api/mcp
   tags:
   - MCP
+  - Agents
+  - Website
+  tags_raw:
+  - MCP
   - Agent
   - Website
   x-platform: wix
