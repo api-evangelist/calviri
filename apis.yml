@@ -15,6 +15,17 @@ description: >-
   program, no product API and no developer portal; the only machine-readable
   surface on calviri.com is the Wix-platform-generated llms.txt and the
   anonymous site MCP endpoint it advertises.
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://static.wixstatic.com/media/0c6e92_2823fb63b9514e718b52ff84460faf97~mv2.png/v1/fill/w_192,h_192,lg_1,usm_0.66_1.00_0.01/0c6e92_2823fb63b9514e718b52ff84460faf97~mv2.png
 url: https://raw.githubusercontent.com/api-evangelist/calviri/refs/heads/main/apis.yml
 x-type: company
