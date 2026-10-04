@@ -90,6 +90,8 @@ apis:
     url: mcp/calviri-mcp.yml
   - type: Authentication
     url: authentication/calviri-authentication.yml
+  x-surface: platform-generated
+  x-platform-surface: site-mcp
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
