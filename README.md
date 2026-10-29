@@ -64,14 +64,90 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Calviri is a Phoenix, Arizona biotechnology company, founded in 2017, that develops multi-cancer
-diagnostic tests and therapeutic and preventative cancer vaccines for dogs and people, built on
-RNA-Error Derived Neoantigens (REDNs). Its lead product, StageOne Plus, is a canine multi-cancer
-blood test designed to detect stage 1 disease.
+Calviri is a Phoenix, Arizona biotechnology company, founded in 2017, that develops multi-cancer diagnostic tests and therapeutic and preventative cancer vaccines for dogs and people. Its science rests on RNA-Error Derived Neoantigens (REDNs) — abnormal proteins thrown off by the error-prone RNA processing of tumor cells — which Calviri builds as peptides on semiconductor chips and then queries against an individual's blood for antibody responses, using those antibodies as sensitive biomarkers of cancer. Its lead product, StageOne Plus, is a canine multi-cancer blood test designed to detect stage 1 disease before signs appear, alongside a pipeline of canine and human therapeutic and preventative vaccines and a preventative-vaccine trial (VACCS) that enrolled 800+ dogs. Calviri is a life-sciences company with no developer program, no product API and no developer portal; the only machine-readable surface on calviri.com is the Wix-platform-generated llms.txt and the anonymous site MCP endpoint it advertises.
 
-Calviri publishes no developer program, no product API and no developer portal. The only
-machine-readable surface on `calviri.com` is the Wix-platform-generated `llms.txt` and the anonymous
-site MCP endpoint it advertises at `https://www.calviri.com/_api/mcp` — both captured verbatim here.
+**Areas:** Company · Biotechnology · Life Sciences · Health · Cancer Diagnostics · Vaccines · Veterinary · Animal Health · Research
 
-- https://www.calviri.com/
-- https://forgeglobal.com/calviri_stock/
+## Calviri on APIs.io
+
+Everything profiled for Calviri is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/calviri/](https://apis.io/providers/calviri/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Calviri Site MCP](https://apis.io/apis/calviri/calviri-site-mcp/) — An anonymous Model Context Protocol endpoint served from Calviri's own host at https://www.calviri.com/_api/mcp. It is the standard Wix "Site Visitor…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [calviri-site-visitor-assistant](https://apis.io/servers/calviri/calviri-site-visitor-assistant/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Calviri Authentication](https://apis.io/security/calviri/calviri-authentication/)
+- [Calviri Domain Security](https://apis.io/security/calviri/calviri-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.calviri.com/)
+
+## API Evangelist rating
+
+**Kin Score 9.6** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.8 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 0.0 |
+
+**Agent readiness 4.7** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | platform (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.4** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/calviri/](https://apis.io/providers/calviri/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Calviri: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/calviri/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
